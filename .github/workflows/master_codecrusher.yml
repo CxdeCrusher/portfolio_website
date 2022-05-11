@@ -1,9 +1,12 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - codecrusher
+name: Build and deploy Portfolio Website
 
 on:
+  push:
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
@@ -18,7 +21,7 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: npm install, build, and test
+      - name: npm install & build
         run: |
           npm install
           npm run build --if-present
@@ -43,7 +46,7 @@ jobs:
         with:
           name: node-app
 
-      - name: 'Deploy to Azure Web App'
+      - name: 'Deploy to Azure'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
