@@ -58,6 +58,6 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'portfolio_website'
+          app-name: 'codecrusher'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C461EDE8493A4673B4B50878CFF1F383 }}
           package: ./dist/portfolio_website
