@@ -14,7 +14,15 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, ContactComponent, ProjectsComponent, ErrorComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    HomeComponent,
+    ContactComponent,
+    ProjectsComponent,
+    ErrorComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

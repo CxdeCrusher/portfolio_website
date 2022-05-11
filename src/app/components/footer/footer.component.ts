@@ -13,4 +13,8 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  changeLanguage(language: string): void {
+    localStorage.setItem('language', language);
+  }
 }
