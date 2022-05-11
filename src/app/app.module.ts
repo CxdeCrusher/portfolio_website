@@ -13,6 +13,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,8 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right',
       preventDuplicates: true
