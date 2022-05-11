@@ -26,12 +26,12 @@ import { ErrorComponent } from './components/error/error.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({}),
     BrowserAnimationsModule,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right',
       preventDuplicates: true
     }),
+    StoreModule.forRoot({}),
     NgPipesModule
   ],
   providers: [],
