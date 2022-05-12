@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  NgForm,
-  Validators
-} from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
@@ -34,5 +28,6 @@ export class ContactComponent implements OnInit {
     this.toastr.error(
       `Your message is '${contactFormData.message}'. Functionality has not been implemented yet.`
     );
+    this.contactForm.reset();
   }
 }
