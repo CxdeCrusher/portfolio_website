@@ -11,9 +11,27 @@ import SkillData from '../../../assets/data/skills.json';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
-  skills: Skill[] = SkillData;
+  skills: Skill[] = [];
 
-  constructor() {}
+  constructor(private httpClient: HttpClient) {
+    this.getSkillData().forEach(skills => this.skills.push(...skills));
+  }
 
   ngOnInit(): void {}
+
+  private getSkillData(): Observable<Skill[]> {
+    return this.httpClient
+      .get<Skill[]>('../../../assets/data/skills.json')
+      .pipe(
+        map((skills: Skill[]) => {
+          return skills.map(skill => ({
+            skill: skill.skill,
+            level: skill.level,
+            yearsExperience: skill.yearsExperience,
+            description: skill.description,
+            imagePath: skill.imagePath
+          }));
+        })
+      );
+  }
 }
