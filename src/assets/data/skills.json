@@ -1,0 +1,16 @@
+[
+    {
+        "skill": "Angular",
+        "level": "Beginner",
+        "yearsExperience": 2,
+        "description": "Angular is a front-end web application framework for building single-page applications.",
+        "imagePath": "images/csharp.png"
+    },
+    {
+        "skill": "C#",
+        "level": "Intermediate",
+        "yearsExperience": 2,
+        "description": "C# is a programming language that is used to develop applications for the Microsoft .NET Framework.",
+        "imagePath": "images/csharp.png"
+    }
+]
