@@ -1,7 +1,6 @@
 [
     {
-        "skill": "Angular",
-        "level": "Beginner",
+        "name": "Node.js",
         "yearsExperience": 0.5,
         "description": "Angular is a front-end web application framework for building single-page applications.",
         "imagePath": "images/csharp.png"
