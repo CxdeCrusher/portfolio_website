@@ -1,58 +1,91 @@
 <!-- Section Hero  -->
-<div class="container mx-auto my-4 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40">
-
-  <div class="grid justify-center items-center order-1 col-span-1">
-    <img class="lg:h-80 md:h-64 h-40 transition ease-linear delay-75 hover:scale-105"
-      src="assets/images/pages/resume.svg" alt="Profile">
-  </div>
-
+<div class="container mx-auto md:my-6 md:pt-4 md:space-x-10 justify-center md:py-44">
   <div class="mt-8 md:mt-0 lg:justify-end col-span-2 mx-4">
-    <p class="text-4xl text-green-500 text-center font-extrabold md:text-6xl md:text-left">About me.</p>
+    <p class="text-4xl text-green-500 font-extrabold md:text-6xl text-center md:text-left">About me.</p>
     <p class="text-xl font-medium text-gray-600 leading-normal mb-8 text-center md:text-left">
-      I am Dheeraj, a Software Engineer based in The Netherlands with a passion for technology. I enjoy movies and TV
-      series, fitness,
-      food, and traveling.
-    </p>
-    <p class="text-xl font-medium text-gray-600 leading-normal mb-8 text-center md:text-left">
-      I am familiar with C#, .NET, JavaScript, Python, Microsoft Azure, SQL Server, CI/CD and much more.
+      My name is Dheeraj and I am a Software Engineer located in a small village in The Netherlands. I
+      have always had a passion for technology. Besides being a techy I enjoy movies & TV
+      series, fitness, food, and traveling.
     </p>
     <button routerLink="/portfolio"
-      class="block mt-6 mx-auto md:mx-0 text-lg py-2 px-4 font-medium text-white rounded transition ease-linear delay-75 hover:scale-105  hover:bg-green-600 bg-green-500">View
+      class="block mt-6 md:mx-0 mx-auto text-lg py-2 px-4 font-medium text-white rounded transition ease-linear delay-75 hover:scale-105  hover:bg-green-600 bg-green-500">View
       portfolio</button>
 
-    <div class="my-4">
+    <div class="my-8">
       <p class="text-4xl text-green-500 text-center font-extrabold md:text-6xl md:text-left">Skills.</p>
-      <div *ngFor="let skill of skills"
-        class="card bg-gray-50 shadow w-80 h-auto rounded-xl p-6 space-y-4 my-4 mx-auto transition hover:scale-105">
-        <a routerLink="/error">
-          <img class="w-full h-64 rounded-md transition hover:bg-slate-300"
-            src="https://images.unsplash.com/photo-1635002962487-2c1d4d2f63c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGlnaXRhbCUyMGFydHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=800&q=60"
-            alt="">
-        </a>
-        <div id="description" class="space-y-4">
+
+      <p class="text-2xl text-gray-600 font-bold py-4">Programming languages</p>
+      <div class="flex flex-wrap justify-center md:justify-start">
+        <div *ngFor="let language of languages"
+          class="card bg-gray-50 shadow w-64 h-auto rounded-xl p-6 space-y-4 my-4 m-4 ml-0 transition hover:scale-105">
           <a routerLink="/error">
-            <h2 class="text-green-500 font-semibold text-xl transition hover:text-green-600 select-none">
-              {{ skill.skill }}
-            </h2>
+            <img class="w-full h-34 rounded-md transition hover:bg-slate-300"
+              src="https://images.unsplash.com/photo-1635002962487-2c1d4d2f63c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGlnaXRhbCUyMGFydHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=800&q=60"
+              alt="">
           </a>
-          <p class="text-gray-600 text-sm select-none"> {{ skill.description }} </p>
-          <div class="flex items-center justify-between font-semibold text-sm">
-            <span id="price" class="text-cyan-300 flex justify-between items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 320 512" fill="#67E7F9">
-                <path
-                  d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" />
-              </svg>
-              0.041 ETH
-            </span>
-            <span class="text-green-500 flex justify-between items-center select-none">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                  clip-rule="evenodd" />
-              </svg>
-              <ng-container *ngIf="skill.yearsExperience <= 1">{{ skill.yearsExperience }} year</ng-container>
-              <ng-container *ngIf="skill.yearsExperience > 1">{{ skill.yearsExperience }} years</ng-container>
-            </span>
+          <div id="description" class="space-y-4">
+            <a routerLink="/error">
+              <h2 class="text-green-500 font-semibold text-xl transition hover:text-green-600 select-none">
+                {{ language.name }}
+              </h2>
+            </a>
+            <p class="text-gray-600 text-sm select-none"> {{ language.description }} </p>
+            <div class="flex items-center justify-between font-semibold text-sm">
+              <span id="price" class="text-cyan-300 flex justify-between items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 320 512" fill="#67E7F9">
+                  <path
+                    d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" />
+                </svg>
+                0.041 ETH
+              </span>
+              <span class="text-green-500 flex justify-between items-center select-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd" />
+                </svg>
+                <ng-container *ngIf="language.yearsExperience <= 1">{{ language.yearsExperience }} year</ng-container>
+                <ng-container *ngIf="language.yearsExperience > 1">{{ language.yearsExperience }} years</ng-container>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-2xl text-gray-600 font-bold py-4">Tools</p>
+      <div class="flex flex-wrap justify-start">
+        <div *ngFor="let tool of tools"
+          class="card bg-gray-50 shadow w-64 h-auto rounded-xl p-6 space-y-4 m-4 ml-0 transition hover:scale-105">
+          <a routerLink="/error">
+            <img class="w-full h-34 rounded-md transition hover:bg-slate-300"
+              src="https://images.unsplash.com/photo-1635002962487-2c1d4d2f63c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGlnaXRhbCUyMGFydHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=800&q=60"
+              alt="">
+          </a>
+          <div id="description" class="space-y-4">
+            <a routerLink="/error">
+              <h2 class="text-green-500 font-semibold text-xl transition hover:text-green-600 select-none">
+                {{ tool.name }}
+              </h2>
+            </a>
+            <p class="text-gray-600 text-sm select-none"> {{ tool.description }} </p>
+            <div class="flex items-center justify-between font-semibold text-sm">
+              <span id="price" class="text-cyan-300 flex justify-between items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 320 512" fill="#67E7F9">
+                  <path
+                    d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" />
+                </svg>
+                0.041 ETH
+              </span>
+              <span class="text-green-500 flex justify-between items-center select-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd" />
+                </svg>
+                <ng-container *ngIf="tool.yearsExperience <= 1">{{ tool.yearsExperience }} year</ng-container>
+                <ng-container *ngIf="tool.yearsExperience > 1">{{ tool.yearsExperience }} years</ng-container>
+              </span>
+            </div>
           </div>
         </div>
       </div>

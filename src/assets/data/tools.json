@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Visual Studio",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "images/visual_studio.png"
+    },
+    {
+        "name": "Visual Studio Code",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "images/visual_studio_code.png"
+    },
+    {
+        "name": "Git",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "images/git.png"
+    },
+    {
+        "name": "Postman",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "images/postman.png"
+    }
+]

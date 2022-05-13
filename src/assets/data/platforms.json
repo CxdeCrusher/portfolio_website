@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Microsoft Azure",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "images/microsoft_azure.png"
+    },
+    {
+        "name": "Firebase",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "images/firebase.png"
+    }
+]
