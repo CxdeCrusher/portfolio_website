@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Skill } from 'src/app/models/skill';
 import { SkillTypes } from 'src/app/enums/skillTypes';
@@ -16,7 +15,7 @@ export class AboutMeComponent implements OnInit {
   databases: Skill[] = [];
   tools: Skill[] = [];
 
-  constructor(private httpClient: HttpClient, private skillsService: SkillsService) {
+  constructor(private skillsService: SkillsService) {
     this.getLanguages();
     this.getFrameworksLibraries();
     this.getPlatforms();
@@ -24,7 +23,9 @@ export class AboutMeComponent implements OnInit {
     this.getTools();
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 
   private getLanguages() {
     this.skillsService.getSkillData(SkillTypes.Languages).forEach(skills => this.languages.push(...skills));
