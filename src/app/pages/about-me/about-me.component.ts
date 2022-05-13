@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Skill } from 'src/app/models/skill';
-import { SkillTypes } from 'src/app/models/skillTypes';
+import { SkillTypes } from 'src/app/enums/skillTypes';
 import { SkillsService } from 'src/app/services/skills.service';
 
 @Component({
