@@ -1,0 +1,14 @@
+[
+    {
+        "name": "C#",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "images/csharp.png"
+    },
+    {
+        "name": "TypeScript",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "images/typescript.png"
+    }
+]

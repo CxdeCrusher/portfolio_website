@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Skill } from 'src/app/models/skill';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-import SkillData from '../../../assets/data/skills.json';
+import { SkillTypes } from 'src/app/models/skillTypes';
+import { SkillsService } from 'src/app/services/skills.service';
 
 @Component({
   selector: 'app-about-me',
@@ -11,27 +10,52 @@ import SkillData from '../../../assets/data/skills.json';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
-  skills: Skill[] = [];
+  languages: Skill[] = [];
+  frameworksLibraries: Skill[] = [];
+  platforms: Skill[] = [];
+  databases: Skill[] = [];
+  tools: Skill[] = [];
 
-  constructor(private httpClient: HttpClient) {
-    this.getSkillData().forEach(skills => this.skills.push(...skills));
+  constructor(
+    private httpClient: HttpClient,
+    private skillsService: SkillsService
+  ) {
+    this.getLanguages();
+    this.getFrameworksLibraries();
+    this.getPlatforms();
+    this.getDatabases();
+    this.getTools();
   }
 
   ngOnInit(): void {}
 
-  private getSkillData(): Observable<Skill[]> {
-    return this.httpClient
-      .get<Skill[]>('../../../assets/data/skills.json')
-      .pipe(
-        map((skills: Skill[]) => {
-          return skills.map(skill => ({
-            skill: skill.skill,
-            level: skill.level,
-            yearsExperience: skill.yearsExperience,
-            description: skill.description,
-            imagePath: skill.imagePath
-          }));
-        })
-      );
+  private getLanguages() {
+    this.skillsService
+      .getSkillData(SkillTypes.Languages)
+      .forEach(skills => this.languages.push(...skills));
+  }
+
+  private getFrameworksLibraries() {
+    this.skillsService
+      .getSkillData(SkillTypes.Frameworks_libraries)
+      .forEach(skills => this.frameworksLibraries.push(...skills));
+  }
+
+  private getPlatforms() {
+    this.skillsService
+      .getSkillData(SkillTypes.Platforms)
+      .forEach(skills => this.platforms.push(...skills));
+  }
+
+  private getDatabases() {
+    this.skillsService
+      .getSkillData(SkillTypes.Databases)
+      .forEach(skills => this.databases.push(...skills));
+  }
+
+  private getTools() {
+    this.skillsService
+      .getSkillData(SkillTypes.Tools)
+      .forEach(skills => this.tools.push(...skills));
   }
 }

@@ -22,7 +22,7 @@
 
     <div class="my-4">
       <p class="text-4xl text-green-500 text-center font-extrabold md:text-6xl md:text-left">Skills.</p>
-      <div *ngFor="let skill of skills"
+      <div *ngFor="let language of languages"
         class="card bg-gray-50 shadow w-80 h-auto rounded-xl p-6 space-y-4 my-4 mx-auto transition hover:scale-105">
         <a routerLink="/error">
           <img class="w-full h-64 rounded-md transition hover:bg-slate-300"
@@ -32,10 +32,10 @@
         <div id="description" class="space-y-4">
           <a routerLink="/error">
             <h2 class="text-green-500 font-semibold text-xl transition hover:text-green-600 select-none">
-              {{ skill.skill }}
+              {{ language.name }}
             </h2>
           </a>
-          <p class="text-gray-600 text-sm select-none"> {{ skill.description }} </p>
+          <p class="text-gray-600 text-sm select-none"> {{ language.description }} </p>
           <div class="flex items-center justify-between font-semibold text-sm">
             <span id="price" class="text-cyan-300 flex justify-between items-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 320 512" fill="#67E7F9">
@@ -50,8 +50,8 @@
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
                   clip-rule="evenodd" />
               </svg>
-              <ng-container *ngIf="skill.yearsExperience <= 1">{{ skill.yearsExperience }} year</ng-container>
-              <ng-container *ngIf="skill.yearsExperience > 1">{{ skill.yearsExperience }} years</ng-container>
+              <ng-container *ngIf="language.yearsExperience <= 1">{{ language.yearsExperience }} year</ng-container>
+              <ng-container *ngIf="language.yearsExperience > 1">{{ language.yearsExperience }} years</ng-container>
             </span>
           </div>
         </div>

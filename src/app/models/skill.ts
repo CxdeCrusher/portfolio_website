@@ -1,6 +1,5 @@
 export interface Skill {
-  skill: string;
-  level: string;
+  name: string;
   yearsExperience: number;
   description: string;
   imagePath: string;
