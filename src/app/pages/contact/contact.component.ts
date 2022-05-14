@@ -24,10 +24,13 @@ export class ContactComponent implements OnInit {
   }
 
   onFormSubmit(contactFormData: any) {
-    // this.toastr.success('Your message has been sent!');
-    this.toastr.error(
-      `Your message is '${contactFormData.message}'. Functionality has not been implemented yet.`
-    );
+    // this.toastr.success('Contact form','Your message has been sent!');
+    this.toastr.error('Contact form', `Functionality has not been implemented yet.`);
+    this.contactForm.reset();
+  }
+
+  resetForm() {
+    this.toastr.success('Contact form', 'Form has been reset successfully!');
     this.contactForm.reset();
   }
 }
