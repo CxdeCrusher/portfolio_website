@@ -1,26 +1,32 @@
 [
     {
-        "name": "Visual Studio",
+        "name": "Visual Studio 2022",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "images/visual_studio.png"
+        "imagePath": "assets/images/programming_languages/vscode.png"
     },
     {
         "name": "Visual Studio Code",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "images/visual_studio_code.png"
+        "imagePath": "assets/images/programming_languages/vscode.png"
+    },
+    {
+        "name": "Azure DevOps",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "assets/images/programming_languages/vscode.png"
     },
     {
         "name": "Git",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "images/git.png"
+        "imagePath": "assets/images/programming_languages/vscode.png"
     },
     {
         "name": "Postman",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "images/postman.png"
+        "imagePath": "assets/images/programming_languages/vscode.png"
     }
 ]
