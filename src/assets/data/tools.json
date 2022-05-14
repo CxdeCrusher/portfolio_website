@@ -3,30 +3,30 @@
         "name": "Visual Studio 2022",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/tools/visual_studio2022.png"
     },
     {
         "name": "Visual Studio Code",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/tools/vscode.png"
     },
     {
         "name": "Azure DevOps",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/tools/azure_devops.png"
     },
     {
         "name": "Git",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/tools/git.png"
     },
     {
         "name": "Postman",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/tools/postman.png"
     }
 ]

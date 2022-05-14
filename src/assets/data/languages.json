@@ -3,36 +3,36 @@
         "name": "C#",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/csharp.png"
+        "imagePath": "assets/images/skills/programming_languages/csharp.png"
     },
     {
         "name": "JavaScript",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/javascript.png"
+        "imagePath": "assets/images/skills/programming_languages/javascript.png"
     },
     {
         "name": "TypeScript",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/typescript.png"
+        "imagePath": "assets/images/skills/programming_languages/typescript.png"
     },
     {
         "name": "SQL",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/sql.png"
+        "imagePath": "assets/images/skills/programming_languages/sql.png"
     },
     {
         "name": "Java",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/java.png"
+        "imagePath": "assets/images/skills/programming_languages/java.png"
     },
     {
         "name": "Python",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/python.png"
+        "imagePath": "assets/images/skills/programming_languages/python.png"
     }
 ]

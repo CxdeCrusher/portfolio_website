@@ -42,7 +42,7 @@ export class AboutMeComponent implements OnInit {
   }
 
   private getCloudServices() {
-    this.skillsService.getSkillData(SkillTypes.CloudServices).forEach(skills => this.platforms.push(...skills));
+    this.skillsService.getSkillData(SkillTypes.Cloud_services).forEach(skills => this.cloudServices.push(...skills));
   }
 
   private getDatabases() {
