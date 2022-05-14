@@ -12,6 +12,7 @@ export class AboutMeComponent implements OnInit {
   languages: Skill[] = [];
   frameworksLibraries: Skill[] = [];
   platforms: Skill[] = [];
+  cloudServices: Skill[] = [];
   databases: Skill[] = [];
   tools: Skill[] = [];
 
@@ -19,13 +20,12 @@ export class AboutMeComponent implements OnInit {
     this.getLanguages();
     this.getFrameworksLibraries();
     this.getPlatforms();
+    this.getCloudServices();
     this.getDatabases();
     this.getTools();
   }
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   private getLanguages() {
     this.skillsService.getSkillData(SkillTypes.Languages).forEach(skills => this.languages.push(...skills));
@@ -39,6 +39,10 @@ export class AboutMeComponent implements OnInit {
 
   private getPlatforms() {
     this.skillsService.getSkillData(SkillTypes.Platforms).forEach(skills => this.platforms.push(...skills));
+  }
+
+  private getCloudServices() {
+    this.skillsService.getSkillData(SkillTypes.CloudServices).forEach(skills => this.platforms.push(...skills));
   }
 
   private getDatabases() {

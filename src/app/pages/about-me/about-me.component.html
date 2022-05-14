@@ -33,72 +33,86 @@
       </p>
       <div class="my-8">
         <ng-container>
-          <h1 class="text-2xl text-gray-600 font-bold text-center md:text-left my-2">Programming languages</h1>
+          <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Languages</h1>
           <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
             <div
               *ngFor="let language of languages"
-              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 transition duration-300 w-max mt-2 mb-2">
+              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
               <img
-                class="p-1 w-11 h-11"
-                src="./../../../assets/images/programming_languages/vscode.png"
+                class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
+                src="{{ language.imagePath }}"
                 alt="Programming language icon" />
-              <div class="flex items-center px-3 py-2 mr-2">{{ language.name }}</div>
+              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ language.name }}</div>
             </div>
           </div>
         </ng-container>
         <ng-container>
-          <h1 class="text-2xl text-gray-600 font-bold text-center md:text-left my-2">Frameworks & libraries</h1>
+          <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Frameworks & libraries</h1>
           <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
             <div
-              *ngFor="let language of frameworksLibraries"
-              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 transition duration-300 w-max mt-2 mb-2">
+              *ngFor="let frameworkLibrary of frameworksLibraries"
+              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
               <img
-                class="p-1 w-11 h-11"
-                src="assets/images/programming_languages/vscode.png"
+                class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
+                src="{{ frameworkLibrary.imagePath }}"
                 alt="Programming language icon" />
-              <div class="flex items-center px-3 py-2 mr-2">{{ language.name }}</div>
+              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ frameworkLibrary.name }}</div>
             </div>
           </div>
         </ng-container>
         <ng-container>
-          <h1 class="text-2xl text-gray-600 font-bold text-center md:text-left my-2">Databases</h1>
+          <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Databases</h1>
           <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
             <div
-              *ngFor="let language of databases"
-              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 transition duration-300 w-max mt-2 mb-2">
+              *ngFor="let database of databases"
+              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
               <img
-                class="p-1 w-11 h-11"
-                src="assets/images/programming_languages/vscode.png"
+                class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
+                src="{{ database.imagePath }}"
                 alt="Programming language icon" />
-              <div class="flex items-center px-3 py-2 mr-2">{{ language.name }}</div>
+              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ database.name }}</div>
             </div>
           </div>
         </ng-container>
         <ng-container>
-          <h1 class="text-2xl text-gray-600 font-bold text-center md:text-left my-2">Platforms</h1>
+          <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Platforms</h1>
           <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
             <div
-              *ngFor="let language of platforms"
-              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 transition duration-300 w-max mt-2 mb-2">
+              *ngFor="let platform of platforms"
+              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
               <img
-                class="p-1 w-11 h-11"
-                src="assets/images/programming_languages/vscode.png"
+                class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
+                src="{{ platform.imagePath }}"
                 alt="Programming language icon" />
-              <div class="flex items-center px-3 py-2 mr-2">{{ language.name }}</div>
+              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ platform.name }}</div>
             </div>
           </div>
         </ng-container>
         <ng-container>
-          <h1 class="text-2xl text-gray-600 font-bold text-center md:text-left my-2">Tools</h1>
+          <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Cloud services</h1>
           <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
             <div
-              *ngFor="let language of tools"
-              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 transition duration-300 w-max mt-2 mb-2">
+              *ngFor="let cloudService of cloudServices"
+              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
               <img
-                class="p-1 w-11 h-11"
-                src="assets/images/programming_languages/vscode.png"
+                class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
+                src="{{ cloudService.imagePath }}"
                 alt="Programming language icon" />
-              <div class="flex items-center px-3 py-2 mr-2">{{ language.name }}</div>
+              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ cloudService.name }}</div>
+            </div>
+          </div>
+        </ng-container>
+        <ng-container>
+          <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Tools</h1>
+          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+            <div
+              *ngFor="let tool of tools"
+              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
+              <img
+                class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
+                src="{{ tool.imagePath }}"
+                alt="Programming language icon" />
+              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ tool.name }}</div>
             </div>
           </div>
         </ng-container>

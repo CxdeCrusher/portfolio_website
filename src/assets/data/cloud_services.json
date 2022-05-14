@@ -1,24 +1,24 @@
 [
     {
-        "name": "Angular",
-        "yearsExperience": 0.5,
-        "description": "Angular is a front-end web application framework for building single-page applications.",
-        "imagePath": "assets/images/programming_languages/vscode.png"
-    },
-    {
-        "name": "Node.js",
+        "name": "Azure Functions",
         "yearsExperience": 0.5,
         "description": "Some description",
         "imagePath": "assets/images/programming_languages/vscode.png"
     },
     {
-        "name": ".NET 6",
+        "name": "Azure API Management",
         "yearsExperience": 0.5,
         "description": "Some description",
         "imagePath": "assets/images/programming_languages/vscode.png"
     },
     {
-        "name": "ASP.NET",
+        "name": "Azure Logic Apps",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "assets/images/programming_languages/vscode.png"
+    },
+    {
+        "name": "Azure Servicebus",
         "yearsExperience": 0.5,
         "description": "Some description",
         "imagePath": "assets/images/programming_languages/vscode.png"

@@ -3,5 +3,6 @@ export enum SkillTypes {
   Frameworks_libraries = 'frameworks_libraries',
   Databases = 'databases',
   Platforms = 'platforms',
+  CloudServices = 'cloud_services',
   Tools = 'tools'
 }
