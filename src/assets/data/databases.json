@@ -3,24 +3,24 @@
         "name": "SQL Server",
         "yearsExperience": 0.5,
         "description": "Angular is a front-end web application framework for building single-page applications.",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/databases/sql_server.png"
     },
     {
         "name": "MySQL",
         "yearsExperience": 2,
         "description": "C# is a programming language that is used to develop applications for the Microsoft .NET Framework.",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/databases/mysql.png"
     },
     {
         "name": "CosmosDB",
         "yearsExperience": 2,
         "description": "C# is a programming language that is used to develop applications for the Microsoft .NET Framework.",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/databases/cosmosdb.png"
     },
     {
         "name": "MongoDB",
         "yearsExperience": 2,
         "description": "C# is a programming language that is used to develop applications for the Microsoft .NET Framework.",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/databases/mongodb.png"
     }
 ]

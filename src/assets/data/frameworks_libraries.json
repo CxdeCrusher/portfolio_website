@@ -3,24 +3,18 @@
         "name": "Angular",
         "yearsExperience": 0.5,
         "description": "Angular is a front-end web application framework for building single-page applications.",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/frameworks_libraries/angular.png"
     },
     {
         "name": "Node.js",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/frameworks_libraries/nodejs.png"
     },
     {
         "name": ".NET 6",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
-    },
-    {
-        "name": "ASP.NET",
-        "yearsExperience": 0.5,
-        "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/frameworks_libraries/dotnet.png"
     }
 ]

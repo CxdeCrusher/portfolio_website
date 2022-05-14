@@ -3,24 +3,30 @@
         "name": "Azure Functions",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/cloud_services/azure_functions.png"
     },
     {
         "name": "Azure API Management",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/cloud_services/api_management.png"
     },
     {
         "name": "Azure Logic Apps",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/cloud_services/logic_apps.png"
     },
     {
-        "name": "Azure Servicebus",
+        "name": "Azure Service Bus",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/cloud_services/service_bus.png"
+    },
+    {
+        "name": "Azure Application Insights",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "assets/images/skills/cloud_services/application_insights.png"
     }
 ]

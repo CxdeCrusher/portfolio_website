@@ -3,12 +3,12 @@
         "name": "Microsoft Azure",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/platforms/azure.png"
     },
     {
         "name": "Firebase",
         "yearsExperience": 0.5,
         "description": "Some description",
-        "imagePath": "assets/images/programming_languages/vscode.png"
+        "imagePath": "assets/images/skills/platforms/firebase.png"
     }
 ]
