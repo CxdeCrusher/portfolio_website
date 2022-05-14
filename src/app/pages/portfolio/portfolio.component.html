@@ -1,44 +1,28 @@
-<!-- Section Hero  -->
-<div class="container mx-auto my-4 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40">
-  <div class="grid justify-center items-center order-1 col-span-1">
-    <img
-      class="lg:h-80 md:h-64 h-40 transition ease-linear delay-75 hover:scale-105"
-      src="assets/images/pages/portfolio.svg"
-      alt="Profile" />
-  </div>
-  <div class="mt-8 md:mt-0 lg:justify-end col-span-2 mx-4">
-    <p class="text-4xl text-green-500 text-center font-extrabold md:text-6xl md:text-left">Portfolio</p>
-    <p class="text-xl font-medium text-gray-600 leading-normal mb-8 text-center md:text-left">
-      Enim id deserunt qui dolore culpa et dolor pariatur labore. Occaecat cillum pariatur cupidatat cupidatat aliqua.
-      Nulla eiusmod anim Lorem tempor cupidatat ullamco laboris qui proident tempor culpa commodo. Qui magna adipisicing
-      consequat anim esse exercitation et anim Lorem amet dolor aliquip Lorem exercitation. Ad aliquip irure proident
-      anim irure voluptate tempor. Tempor pariatur non enim dolor ullamco minim elit ad ut reprehenderit voluptate enim.
-      Sint eu laborum ea duis ipsum et labore commodo enim deserunt.
-    </p>
-    <div
-      class="max-w-sm bg-slate-100 rounded-lg border border-emerald-100 shadow-md dark:bg-gray-800 dark:border-gray-700 transition ease-linear delay-75 hover:scale-105">
-      <a routerLink="/error">
-        <img class="rounded-t-lg" src="assets/images/pages/portfolio.svg" alt="Portfolio" />
-      </a>
-      <div class="p-5">
-        <a routerLink="/error">
-          <p class="mb-2 text-2xl font-bold tracking-tight text-green-500 dark:text-white">Game of Trades</p>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          In labore consectetur incididunt aute Lorem dolor aute ut. Sint sit cupidatat proident est elit ad velit sint
-          consequat exercitation. Irure velit tempor consectetur sint aute nostrud id cupidatat nostrud.
+<div class="container mx-auto md:my-8 md:pt-4 md:space-x-10 justify-center md:py-44">
+  <div class="mt-8 md:mt-0 md:justify-end mx-4">
+    <div class="md:grid md:grid-cols-2">
+      <div>
+        <img
+          class="md:h-80 h-40 p-4 mx-auto my-4 transition ease-linear delay-75 hover:scale-105"
+          src="assets/images/pages/portfolio.svg"
+          alt="Profile" />
+      </div>
+      <div>
+        <h1 class="text-4xl text-green-500 font-extrabold md:text-6xl text-center md:text-left">Portfolio</h1>
+        <p class="text-xl font-medium text-gray-600 leading-normal text-center md:text-left my-3">
+          Throughout the years I've completed different projects. Here below you can find an overview of some of these
+          projects.
         </p>
-        <a
-          routerLink="/error"
-          class="inline-flex items-center py-2 px-3 text-sm mt-6 mx-auto md:mx-0 text-white rounded transition ease-linear delay-75 hover:scale-105 hover:bg-green-600 bg-green-500">
-          Read more
-          <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill-rule="evenodd"
-              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </a>
+
+        <p class="text-xl font-medium text-gray-600 leading-normal text-center md:text-left my-3">
+          In case you have a question about a certain project, please don't hesitate to contact me using the
+          <a routerLink="/contact" class="text-green-500 hover:text-green-600">contact form</a>.
+        </p>
+        <button
+          routerLink="/"
+          class="block mt-6 md:mx-0 mx-auto text-lg py-2 px-4 font-medium text-white rounded transition ease-linear delay-75 hover:scale-105 hover:bg-green-600 bg-green-500">
+          View my skills
+        </button>
       </div>
     </div>
   </div>

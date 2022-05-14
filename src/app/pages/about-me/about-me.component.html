@@ -1,148 +1,107 @@
-<!-- Section Hero  -->
 <div class="container mx-auto md:my-8 md:pt-4 md:space-x-10 justify-center md:py-44">
-  <div class="mt-8 md:mt-0 lg:justify-end col-span-2 mx-4">
-    <p class="text-4xl text-green-500 font-extrabold md:text-6xl text-center md:text-left">About me</p>
-    <p class="text-xl font-medium text-gray-600 leading-normal mb-8 text-center md:text-left">
-      My name is Dheeraj and I am a Software Engineer with a degree in Software Engineering. Currently I'm located in a
-      small village within The Netherlands. I've always had a passion for computers and tech. That's also the reason why
-      I became a Software Engineer. Besides being a techy, I enjoy movies & TV series, fitness, food, and traveling.
-    </p>
-    <button
-      routerLink="/portfolio"
-      class="block mt-6 md:mx-0 mx-auto text-lg py-2 px-4 font-medium text-white rounded transition ease-linear delay-75 hover:scale-105 hover:bg-green-600 bg-green-500">
-      View my portfolio
-    </button>
+  <div class="mt-8 md:mt-0 md:justify-end mx-4">
+    <div class="md:grid md:grid-cols-2">
+      <div>
+        <img
+          class="md:h-80 h-40 p-4 mx-auto my-4 transition ease-linear delay-75 hover:scale-105"
+          src="assets/images/pages/portfolio.svg"
+          alt="Profile" />
+      </div>
+      <div>
+        <h1 class="text-4xl text-green-500 font-extrabold md:text-6xl text-center md:text-left">About me</h1>
+        <p class="text-xl font-medium text-gray-600 leading-normal text-center md:text-left my-3">
+          My name is Dheeraj and I am a Software Engineer with a bachlors degree in Software Engineering. Currently I'm
+          located in a small village within The Netherlands.
+        </p>
 
+        <p class="text-xl font-medium text-gray-600 leading-normal text-center md:text-left my-3">
+          I've always had a passion for computers and tech. That's also the reason why I became a Software Engineer.
+          Besides being a techy, I enjoy movies & TV series, fitness, food, and traveling.
+        </p>
+        <button
+          routerLink="/portfolio"
+          class="block mt-6 md:mx-0 mx-auto text-lg py-2 px-4 font-medium text-white rounded transition ease-linear delay-75 hover:scale-105 hover:bg-green-600 bg-green-500">
+          View my portfolio
+        </button>
+      </div>
+    </div>
     <div class="my-8 pt-4 md:pt-8">
-      <p class="text-4xl text-green-500 text-center font-extrabold md:text-6xl md:text-left">My skills</p>
-      <p class="text-xl font-medium text-gray-600 leading-normal mb-8 text-center md:text-left">
+      <h1 class="text-4xl text-green-500 text-center font-extrabold md:text-6xl md:text-left">My skills</h1>
+      <p class="text-xl font-medium text-gray-600 leading-normal text-center md:text-left my-3">
         Throughout the years I've been working on different projects and developed a range of skills and worked with
-        different toolings. Here below you can find an overview of these skills.
+        different technologies. Here below you can find an overview of these skills.
       </p>
-
-      <p class="text-2xl text-gray-600 font-bold py-4 text-center md:text-left">Programming languages</p>
-      <div class="flex flex-wrap justify-center md:justify-start">
-        <div
-          *ngFor="let language of languages"
-          class="card bg-gray-50 shadow w-64 h-auto rounded-xl p-6 space-y-4 my-4 m-4 ml-0 transition hover:scale-105">
-          <a routerLink="/error">
-            <img
-              class="w-full h-34 rounded-md transition hover:bg-slate-300"
-              src="https://images.unsplash.com/photo-1635002962487-2c1d4d2f63c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGlnaXRhbCUyMGFydHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=800&q=60"
-              alt="" />
-          </a>
-          <div id="description" class="space-y-4">
-            <a routerLink="/error">
-              <h2 class="text-green-500 font-semibold text-xl transition hover:text-green-600 select-none">
-                {{ language.name }}
-              </h2>
-            </a>
-            <p class="text-gray-600 text-sm select-none">{{ language.description }}</p>
-            <div class="flex items-center justify-between font-semibold text-sm">
-              <span id="price" class="text-cyan-300 flex justify-between items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 320 512" fill="#67E7F9">
-                  <path
-                    d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" />
-                </svg>
-                0.041 ETH
-              </span>
-              <span class="text-green-500 flex justify-between items-center select-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                    clip-rule="evenodd" />
-                </svg>
-                <ng-container *ngIf="language.yearsExperience <= 1">{{ language.yearsExperience }} year</ng-container>
-                <ng-container *ngIf="language.yearsExperience > 1">{{ language.yearsExperience }} years</ng-container>
-              </span>
+      <div class="my-8">
+        <ng-container>
+          <h1 class="text-2xl text-gray-600 font-bold text-center md:text-left my-2">Programming languages</h1>
+          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+            <div
+              *ngFor="let language of languages"
+              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 transition duration-300 w-max mt-2 mb-2">
+              <img
+                class="p-1 w-11 h-11"
+                src="./../../../assets/images/programming_languages/vscode.png"
+                alt="Programming language icon" />
+              <div class="flex items-center px-3 py-2 mr-2">{{ language.name }}</div>
             </div>
           </div>
-        </div>
-      </div>
-      <p class="text-2xl text-gray-600 font-bold py-4 text-center md:text-left">Databases</p>
-      <div class="flex flex-wrap justify-center md:justify-start">
-        <div
-          *ngFor="let database of databases"
-          class="card bg-gray-50 shadow w-64 h-auto rounded-xl p-6 space-y-4 my-4 m-4 ml-0 transition hover:scale-105">
-          <a routerLink="/error">
-            <img
-              class="w-full h-34 rounded-md transition hover:bg-slate-300"
-              src="https://images.unsplash.com/photo-1635002962487-2c1d4d2f63c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGlnaXRhbCUyMGFydHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=800&q=60"
-              alt="" />
-          </a>
-          <div id="description" class="space-y-4">
-            <a routerLink="/error">
-              <h2 class="text-green-500 font-semibold text-xl transition hover:text-green-600 select-none">
-                {{ database.name }}
-              </h2>
-            </a>
-            <p class="text-gray-600 text-sm select-none">{{ database.description }}</p>
-            <div class="flex items-center justify-between font-semibold text-sm">
-              <span id="price" class="text-cyan-300 flex justify-between items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 320 512" fill="#67E7F9">
-                  <path
-                    d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" />
-                </svg>
-                0.041 ETH
-              </span>
-              <span class="text-green-500 flex justify-between items-center select-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                    clip-rule="evenodd" />
-                </svg>
-                <ng-container *ngIf="database.yearsExperience <= 1">{{ database.yearsExperience }} year</ng-container>
-                <ng-container *ngIf="database.yearsExperience > 1">{{ database.yearsExperience }} years</ng-container>
-              </span>
+        </ng-container>
+        <ng-container>
+          <h1 class="text-2xl text-gray-600 font-bold text-center md:text-left my-2">Frameworks & libraries</h1>
+          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+            <div
+              *ngFor="let language of frameworksLibraries"
+              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 transition duration-300 w-max mt-2 mb-2">
+              <img
+                class="p-1 w-11 h-11"
+                src="assets/images/programming_languages/vscode.png"
+                alt="Programming language icon" />
+              <div class="flex items-center px-3 py-2 mr-2">{{ language.name }}</div>
             </div>
           </div>
-        </div>
-      </div>
-      <p class="text-2xl text-gray-600 font-bold py-4 text-center md:text-left">Framework & libraries</p>
-      <div class="flex flex-wrap justify-center md:justify-start">
-        <div
-          *ngFor="let frameworkLibrary of frameworksLibraries"
-          class="card bg-gray-50 shadow w-64 h-auto rounded-xl p-6 space-y-4 my-4 m-4 ml-0 transition hover:scale-105">
-          <a routerLink="/error">
-            <img
-              class="w-full h-34 rounded-md transition hover:bg-slate-300"
-              src="https://images.unsplash.com/photo-1635002962487-2c1d4d2f63c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGlnaXRhbCUyMGFydHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=800&q=60"
-              alt="" />
-          </a>
-          <div id="description" class="space-y-4">
-            <a routerLink="/error">
-              <h2 class="text-green-500 font-semibold text-xl transition hover:text-green-600 select-none">
-                {{ frameworkLibrary.name }}
-              </h2>
-            </a>
-            <p class="text-gray-600 text-sm select-none">{{ frameworkLibrary.description }}</p>
-            <div class="flex items-center justify-between font-semibold text-sm">
-              <span id="price" class="text-cyan-300 flex justify-between items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 320 512" fill="#67E7F9">
-                  <path
-                    d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" />
-                </svg>
-                0.041 ETH
-              </span>
-              <span class="text-green-500 flex justify-between items-center select-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                    clip-rule="evenodd" />
-                </svg>
-                <ng-container *ngIf="frameworkLibrary.yearsExperience <= 1"
-                  >{{ frameworkLibrary.yearsExperience }} year</ng-container
-                >
-                <ng-container *ngIf="frameworkLibrary.yearsExperience > 1"
-                  >{{ frameworkLibrary.yearsExperience }} years</ng-container
-                >
-              </span>
+        </ng-container>
+        <ng-container>
+          <h1 class="text-2xl text-gray-600 font-bold text-center md:text-left my-2">Databases</h1>
+          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+            <div
+              *ngFor="let language of databases"
+              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 transition duration-300 w-max mt-2 mb-2">
+              <img
+                class="p-1 w-11 h-11"
+                src="assets/images/programming_languages/vscode.png"
+                alt="Programming language icon" />
+              <div class="flex items-center px-3 py-2 mr-2">{{ language.name }}</div>
             </div>
           </div>
-        </div>
+        </ng-container>
+        <ng-container>
+          <h1 class="text-2xl text-gray-600 font-bold text-center md:text-left my-2">Platforms</h1>
+          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+            <div
+              *ngFor="let language of platforms"
+              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 transition duration-300 w-max mt-2 mb-2">
+              <img
+                class="p-1 w-11 h-11"
+                src="assets/images/programming_languages/vscode.png"
+                alt="Programming language icon" />
+              <div class="flex items-center px-3 py-2 mr-2">{{ language.name }}</div>
+            </div>
+          </div>
+        </ng-container>
+        <ng-container>
+          <h1 class="text-2xl text-gray-600 font-bold text-center md:text-left my-2">Tools</h1>
+          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+            <div
+              *ngFor="let language of tools"
+              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 transition duration-300 w-max mt-2 mb-2">
+              <img
+                class="p-1 w-11 h-11"
+                src="assets/images/programming_languages/vscode.png"
+                alt="Programming language icon" />
+              <div class="flex items-center px-3 py-2 mr-2">{{ language.name }}</div>
+            </div>
+          </div>
+        </ng-container>
       </div>
     </div>
   </div>
