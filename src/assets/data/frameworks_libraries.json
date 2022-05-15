@@ -16,5 +16,11 @@
         "yearsExperience": 0.5,
         "description": "Some description",
         "imagePath": "assets/images/skills/frameworks_libraries/dotnet.png"
+    },
+    {
+        "name": "Tailwind CSS",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "assets/images/skills/frameworks_libraries/tailwind.png"
     }
 ]
