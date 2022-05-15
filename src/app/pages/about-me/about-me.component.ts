@@ -17,17 +17,17 @@ export class AboutMeComponent implements OnInit {
   tools: Skill[] = [];
 
   constructor(private skillsService: SkillsService) {
-    this.getSkills(SkillTypes.Languages, this.languages);
-    this.getSkills(SkillTypes.Frameworks_libraries, this.frameworksLibraries);
-    this.getSkills(SkillTypes.Platforms, this.platforms);
-    this.getSkills(SkillTypes.Cloud_services, this.cloudServices);
-    this.getSkills(SkillTypes.Databases, this.databases);
-    this.getSkills(SkillTypes.Tools, this.tools);
+    this.getSkillsByType(SkillTypes.Languages, this.languages);
+    this.getSkillsByType(SkillTypes.Frameworks_libraries, this.frameworksLibraries);
+    this.getSkillsByType(SkillTypes.Platforms, this.platforms);
+    this.getSkillsByType(SkillTypes.Cloud_services, this.cloudServices);
+    this.getSkillsByType(SkillTypes.Databases, this.databases);
+    this.getSkillsByType(SkillTypes.Tools, this.tools);
   }
 
   ngOnInit(): void {}
 
-  private getSkills(skillType: SkillTypes, skillsArray: Skill[]): Skill[] {
+  private getSkillsByType(skillType: SkillTypes, skillsArray: Skill[]): Skill[] {
     this.skillsService.getSkillData(skillType).forEach(skills => skillsArray.push(...skills));
 
     return skillsArray;
