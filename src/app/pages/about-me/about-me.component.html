@@ -10,13 +10,13 @@
       <div>
         <h1 class="text-4xl text-green-500 font-extrabold md:text-6xl text-center md:text-left">About me</h1>
         <p class="text-xl font-medium text-gray-600 leading-normal text-center md:text-left my-3">
-          My name is Dheeraj and I've got a bachelors degree in Software Engineering. Currently I'm
-          living in a small village within The Netherlands.
+          Hello, I'm Dheeraj and a Software Engineer with a Bachelor of Science. Currently I'm living in a small village
+          within The Netherlands.
         </p>
 
         <p class="text-xl font-medium text-gray-600 leading-normal text-center md:text-left my-3">
-          I've always had a passion for computers and tech. That's also the reason why I became a Software Engineer.
-          Besides being a techy, I enjoy movies & TV series, fitness, food, and traveling.
+          I've always had a passion for computers and tech. That's also the reason why I had decided to become a
+          Software Engineer. Besides being a techy, I also enjoy movies & TV series, fitness, food, and traveling.
         </p>
         <button
           routerLink="/portfolio"
@@ -28,91 +28,91 @@
     <div class="my-8 pt-4 md:pt-8">
       <h1 class="text-4xl text-green-500 text-center font-extrabold md:text-6xl md:text-left">My skills</h1>
       <p class="text-xl font-medium text-gray-600 leading-normal text-center md:text-left my-3">
-        Throughout the years I've been working on different projects and developed a range of skills and worked with
-        different technologies. Here below you can find an overview of these skills.
+        Throughout the years I've done several projects. During these project I developed a range of skills and worked
+        with different technologies. Here below you can find an overview of these skills.
       </p>
       <div class="my-8">
         <ng-container>
           <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Languages</h1>
-          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+          <div class="flex flex-wrap justify-center md:justify-start pb-6 select-none">
             <div
               *ngFor="let language of languages"
-              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
+              class="rounded text-gray-600 bg-slate-100 mr-3 shadow-md font-semibold flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-110">
               <img
                 class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
                 src="{{ language.imagePath }}"
-                alt="Programming language icon" />
-              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ language.name }}</div>
+                alt="Skill icon" />
+              <div class="flex items-center p-3 text-xl">{{ language.name }}</div>
             </div>
           </div>
         </ng-container>
         <ng-container>
           <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Frameworks & libraries</h1>
-          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+          <div class="flex flex-wrap justify-center md:justify-start pb-6 select-none">
             <div
               *ngFor="let frameworkLibrary of frameworksLibraries"
-              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
+              class="rounded text-gray-600 bg-slate-100 mr-3 shadow-md font-semibold flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-110">
               <img
                 class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
                 src="{{ frameworkLibrary.imagePath }}"
-                alt="Programming language icon" />
-              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ frameworkLibrary.name }}</div>
+                alt="Skill icon" />
+              <div class="flex items-center p-3 text-xl">{{ frameworkLibrary.name }}</div>
             </div>
           </div>
         </ng-container>
         <ng-container>
           <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Databases</h1>
-          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+          <div class="flex flex-wrap justify-center md:justify-start pb-6 select-none">
             <div
               *ngFor="let database of databases"
-              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
+              class="rounded text-gray-600 bg-slate-100 mr-3 shadow-md font-semibold flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-110">
               <img
                 class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
                 src="{{ database.imagePath }}"
-                alt="Programming language icon" />
-              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ database.name }}</div>
+                alt="Skill icon" />
+              <div class="flex items-center p-3 text-xl">{{ database.name }}</div>
             </div>
           </div>
         </ng-container>
         <ng-container>
           <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Platforms</h1>
-          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+          <div class="flex flex-wrap justify-center md:justify-start pb-6 select-none">
             <div
               *ngFor="let platform of platforms"
-              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
+              class="rounded text-gray-600 bg-slate-100 mr-3 shadow-md font-semibold flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-110">
               <img
                 class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
                 src="{{ platform.imagePath }}"
-                alt="Programming language icon" />
-              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ platform.name }}</div>
+                alt="Skill icon" />
+              <div class="flex items-center p-3 text-xl">{{ platform.name }}</div>
             </div>
           </div>
         </ng-container>
         <ng-container>
           <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Cloud services</h1>
-          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+          <div class="flex flex-wrap justify-center md:justify-start pb-6 select-none">
             <div
               *ngFor="let cloudService of cloudServices"
-              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
+              class="rounded text-gray-600 bg-slate-100 mr-3 shadow-md font-semibold flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-110">
               <img
                 class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
                 src="{{ cloudService.imagePath }}"
-                alt="Programming language icon" />
-              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ cloudService.name }}</div>
+                alt="Skill icon" />
+              <div class="flex items-center p-3 text-xl">{{ cloudService.name }}</div>
             </div>
           </div>
         </ng-container>
         <ng-container>
           <h1 class="text-3xl text-gray-600 font-bold text-center md:text-left my-2">Tools</h1>
-          <div class="flex flex-wrap space-x-3 justify-center md:justify-start pb-6">
+          <div class="flex flex-wrap justify-center md:justify-start pb-6 select-none">
             <div
               *ngFor="let tool of tools"
-              class="rounded text-gray-600 bg-slate-100 shadow font-semibold text-base flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-105">
+              class="rounded text-gray-600 bg-slate-100 mr-3 shadow-md font-semibold flex flex-row hover:bg-green-500 hover:text-white transition duration-300 w-max mt-2 mb-2 hover:scale-110">
               <img
                 class="p-2 w-auto max-w-11 h-auto max-h-11 md:max-w-16 md:max-h-16"
                 src="{{ tool.imagePath }}"
-                alt="Programming language icon" />
-              <div class="flex items-center px-3 py-2 mr-2 text-xl">{{ tool.name }}</div>
+                alt="Skill icon" />
+              <div class="flex items-center p-3 text-xl">{{ tool.name }}</div>
             </div>
           </div>
         </ng-container>

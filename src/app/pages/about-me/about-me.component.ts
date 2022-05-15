@@ -17,39 +17,19 @@ export class AboutMeComponent implements OnInit {
   tools: Skill[] = [];
 
   constructor(private skillsService: SkillsService) {
-    this.getLanguages();
-    this.getFrameworksLibraries();
-    this.getPlatforms();
-    this.getCloudServices();
-    this.getDatabases();
-    this.getTools();
+    this.getSkillsByType(SkillTypes.Languages, this.languages);
+    this.getSkillsByType(SkillTypes.Frameworks_libraries, this.frameworksLibraries);
+    this.getSkillsByType(SkillTypes.Platforms, this.platforms);
+    this.getSkillsByType(SkillTypes.Cloud_services, this.cloudServices);
+    this.getSkillsByType(SkillTypes.Databases, this.databases);
+    this.getSkillsByType(SkillTypes.Tools, this.tools);
   }
 
   ngOnInit(): void {}
 
-  private getLanguages() {
-    this.skillsService.getSkillData(SkillTypes.Languages).forEach(skills => this.languages.push(...skills));
-  }
+  private getSkillsByType(skillType: SkillTypes, skillsArray: Skill[]): Skill[] {
+    this.skillsService.getSkillData(skillType).forEach(skills => skillsArray.push(...skills));
 
-  private getFrameworksLibraries() {
-    this.skillsService
-      .getSkillData(SkillTypes.Frameworks_libraries)
-      .forEach(skills => this.frameworksLibraries.push(...skills));
-  }
-
-  private getPlatforms() {
-    this.skillsService.getSkillData(SkillTypes.Platforms).forEach(skills => this.platforms.push(...skills));
-  }
-
-  private getCloudServices() {
-    this.skillsService.getSkillData(SkillTypes.Cloud_services).forEach(skills => this.cloudServices.push(...skills));
-  }
-
-  private getDatabases() {
-    this.skillsService.getSkillData(SkillTypes.Databases).forEach(skills => this.databases.push(...skills));
-  }
-
-  private getTools() {
-    this.skillsService.getSkillData(SkillTypes.Tools).forEach(skills => this.tools.push(...skills));
+    return skillsArray;
   }
 }
