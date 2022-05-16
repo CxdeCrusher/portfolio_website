@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from 'src/app/models/skill';
-import { SkillTypes } from 'src/app/enums/skillTypes';
-import { SkillsService } from 'src/app/services/skills.service';
+import { Skill } from '@models/skill';
+import { SkillsService } from '@services/skills.service';
+import { SkillTypes } from 'app/enums/skillTypes';
 
 @Component({
   selector: 'app-about-me',
