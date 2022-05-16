@@ -14,6 +14,8 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -37,9 +39,15 @@ import { HttpClientModule } from '@angular/common/http';
       preventDuplicates: true
     }),
     StoreModule.forRoot({}),
-    NgPipesModule
+    NgPipesModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+ 
+  constructor(faLibrary: FaIconLibrary) {
+faLibrary.addIcons(faGithub, faLinkedin, faInstagram);
+  }
+}

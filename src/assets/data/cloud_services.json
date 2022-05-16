@@ -28,5 +28,11 @@
         "yearsExperience": 0.5,
         "description": "Some description",
         "imagePath": "assets/images/skills/cloud_services/application_insights.png"
+    },
+    {
+        "name": "Azure Key Vault",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "assets/images/skills/cloud_services/key_vault.png"
     }
 ]
