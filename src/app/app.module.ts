@@ -16,7 +16,7 @@ import { FooterComponent } from '@components/footer/footer.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { faBars, faHamburger, faSadTear } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faSadTear } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
