@@ -15,6 +15,7 @@ export class ContactComponent implements OnInit {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', Validators.required],
+      subject: ['', Validators.required],
       message: ['', Validators.required]
     });
   }
@@ -25,12 +26,12 @@ export class ContactComponent implements OnInit {
 
   onFormSubmit(contactFormData: any) {
     // this.toastr.success('Contact form','Your message has been sent!');
-    this.toastr.error('Contact form', `Functionality has not been implemented yet.`);
+    this.toastr.error(`Functionality has not been implemented yet.`, 'Contact');
     this.contactForm.reset();
   }
 
   resetForm() {
-    this.toastr.success('Contact form', 'Form has been reset successfully!');
+    this.toastr.success('Form has been reset successfully!', 'Contact');
     this.contactForm.reset();
   }
 }
