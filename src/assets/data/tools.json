@@ -18,6 +18,12 @@
         "imagePath": "assets/images/skills/tools/azure_devops.png"
     },
     {
+        "name": "GitHub",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "assets/images/skills/tools/github.png"
+    },
+    {
         "name": "Git",
         "yearsExperience": 0.5,
         "description": "Some description",
@@ -28,5 +34,11 @@
         "yearsExperience": 0.5,
         "description": "Some description",
         "imagePath": "assets/images/skills/tools/postman.png"
+    },
+    {
+        "name": "Insomnia",
+        "yearsExperience": 0.5,
+        "description": "Some description",
+        "imagePath": "assets/images/skills/tools/insomnia.png"
     }
 ]
