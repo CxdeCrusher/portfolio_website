@@ -16,6 +16,7 @@
               <label class="font-semibold leading-none">Name:</label>
               <input
                 type="text"
+                formControlName="name"
                 class="leading-none text-gray-600 p-3 focus:outline-none focus:border-green-500 mt-4 bg-white border rounded border-gray-200" />
             </div>
           </div>
@@ -24,6 +25,7 @@
               <label class="font-semibold leading-none">Email:</label>
               <input
                 type="text"
+                formControlName="email"
                 class="leading-none text-gray-600 p-3 focus:outline-none focus:border-green-500 mt-4 bg-white border rounded border-gray-200" />
             </div>
           </div>
@@ -32,6 +34,7 @@
               <label class="font-semibold leading-none">Subject</label>
               <input
                 type="text"
+                formControlName="subject"
                 class="leading-none text-gray-600 p-3 focus:outline-none focus:border-green-500 mt-4 bg-white border rounded border-gray-200" />
             </div>
           </div>
@@ -40,6 +43,7 @@
               <label class="font-semibold leading-none">Message</label>
               <textarea
                 type="text"
+                formControlName="message"
                 class="h-40 text-base leading-none text-gray-600 p-3 focus:oultine-none focus:border-blue-700 mt-4 bg-white border rounded border-gray-200"></textarea>
             </div>
           </div>
@@ -58,6 +62,7 @@
             </button>
           </div>
         </form>
+        <!-- <pre><p class="text-xl text-green-500">{{ contactForm.value | json }}</p></pre> -->
       </div>
     </div>
   </div>
