@@ -16,7 +16,7 @@ import { FooterComponent } from '@components/footer/footer.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { faSadTear } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHamburger, faSadTear } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
@@ -48,6 +48,6 @@ import { faSadTear } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppModule {
   constructor(faLibrary: FaIconLibrary) {
-    faLibrary.addIcons(faGithub, faLinkedin, faInstagram, faSadTear);
+    faLibrary.addIcons(faGithub, faLinkedin, faInstagram, faSadTear, faBars);
   }
 }
