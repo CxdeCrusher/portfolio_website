@@ -12,7 +12,7 @@
         "imagePath": "assets/images/skills/frameworks_libraries/nodejs.png"
     },
     {
-        "name": ".NET 6",
+        "name": ".NET",
         "yearsExperience": 0.5,
         "description": "Some description",
         "imagePath": "assets/images/skills/frameworks_libraries/dotnet.png"
