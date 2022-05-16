@@ -2,17 +2,20 @@
   <div class="flex items-center">
     <div class="container flex flex-col mx-4 md:flex-row items-center justify-between px-5 text-gray-700">
       <div class="w-full lg:w-1/2 mx-8">
-        <div class="text-7xl text-green-500 font-dark font-extrabold mb-8">404 :(</div>
+        <div class="text-7xl text-green-500 font-dark font-extrabold mb-8">
+          404 <fa-icon [icon]="['fas', 'sad-tear']"></fa-icon>
+        </div>
         <p class="text-3xl font-light leading-normal mb-8">
-          The page you were looking for does not exist or has been moved.
+          The page you were looking for is either no longer available or has been relocated.
         </p>
-        <button routerLink="/"
-          class="px-5 inline py-3 mt-2 text-lg leading-5 shadow-2xl text-white rounded transition ease-linear delay-75 hover:scale-105  hover:bg-green-600 bg-green-500">Back
-          to homepage</button>
+        <button
+          routerLink="/"
+          class="px-5 inline py-3 mt-2 text-lg leading-5 shadow-2xl text-white rounded transition ease-linear delay-75 hover:scale-105 hover:bg-green-600 bg-green-500">
+          Back to home
+        </button>
       </div>
       <div class="w-full lg:flex lg:justify-end lg:w-1/2 mx-5 my-12 md:px-11">
-        <img src="assets/images/pages/404.svg"
-          class="md:h-96" alt="Page not found error">
+        <img src="assets/images/pages/404.svg" class="md:h-96" alt="Page not found error" />
       </div>
     </div>
   </div>
